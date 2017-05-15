@@ -1,0 +1,98 @@
+\input{Praeambel}
+
+\begin{document}
+	% Titelseite
+	\include{Inhalt/Titelseite}
+	
+	% Ab hier große, römische Seitenzahlen
+	\pagenumbering{Roman}
+	
+	% Sperrvermerk
+	%\include{Inhalt/Sperrvermerk}
+	
+	% Eidesstattliche Erklärung
+	\include{Inhalt/Erklaerung}
+	
+	%Abstract
+	\include{Inhalt/Abstract2}
+	
+	% Inhaltsverzeichnis
+	\tableofcontents
+	\pagebreak
+	
+	% Abbildungsverzeichnis
+	\listoffigures
+	\pagebreak
+%    \addchap{Abbildungsverzeichnis}
+%	\input{Inhalt/Abbildungen}
+%	\pagebreak
+	
+	% Tabellenverzeichnis
+	\listoftables
+	\pagebreak
+%    \addchap{Tabellenverzeichnis}
+%	\input{Inhalt/Tabellen}
+%	\pagebreak
+	
+	% Abkürzungsverzeichnis
+	\addchap{Abkürzungsverzeichnis}
+	\input{Inhalt/Abkuerzungen}
+	\pagebreak
+	
+	% Abschnitt beenden
+	\clearpage
+	
+	% Seitenzähler erhält den Wert der aktuellen groß römisch nummerierten Seite; Zwischenspeichern für später
+	\setcounter{RomanPagenumber}{\value{page}}
+	
+	% Ab hier arabische Seitenzahlen
+	\pagenumbering{arabic}
+		
+	% Kopf links auf aktuelles Kapitel ändern
+	\automark{chapter}
+	\ihead[\headmark]{\headmark}	
+	\renewcommand*{\chaptermarkformat}{}	
+	
+	% Inhalt der Arbeit
+
+    \include{Inhalt/Einleitung}
+    %\include{Inhalt/Grundlagen}
+    \include{Inhalt/Merkmale}
+    \include{Inhalt/Entwicklung}
+    \include{Inhalt/EinfuehrungQS}
+    \include{Inhalt/Prozessentwicklung}
+    \include{Inhalt/Controlling2}
+    \include{Inhalt/Fazit}
+
+	\clearpage
+	
+	% Ab hier weiter mit großen, römischen Seitenzahlen
+	\pagenumbering{Roman}
+	
+	% Seitenzähler auf zwischengespeicherten Wert für große, römische Zahlen setzen
+	\setcounter{page}{\theRomanPagenumber}
+
+	% Kopf links auf Titel ändern
+	\ihead[\titel]{\titel}	
+	
+	% Anhang
+	%\addchap{Appendices}
+	\appendix
+%	\input{Inhalt/Anhang}
+	
+	% Beigaben
+%	\include{Inhalt/Beigaben}
+	
+	% Glossar, falls benötigt
+	\input{Inhalt/Glossar}
+	%\makeglossaries
+	%\printglossary
+	
+	% Literaturverzeichnis
+	%\printbibliography
+    \addchap{Literaturverzeichnis}
+	\input{Inhalt/Literatur}
+	
+	% Aktuellen Abschnitt beenden
+	\clearpage
+\end{document} 

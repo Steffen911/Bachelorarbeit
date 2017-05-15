@@ -1,0 +1,70 @@
+\addchap{Glossar}
+
+    \begin{description}
+    
+        \item[3-Schichten-Architektur] Als n-Schichtenarchitektur oder -paradigma (engl. Multitier architecture oder n-tier architecture manchmal auch layer architecture) bezeichnet man ein Architekturmuster, bei der eine Anwendungs-Komponente in mehrere eigenständige Module unterteilt wird, die schichtenförmig angeordnet sind: Layer 1, Layer 2, ..., Layer $n$.
+
+            Eine Ebene $i$ darf direkt mit tieferen Ebenen $j<i$ kommunizieren. Tiefere Ebenen können dagegen mit höheren Ebenen nur indirekt kommunizieren (z.B. mittels Multicast-Nachrichten, Broadcast-Nachrichten, Antworten auf Methodenaufrufen oder auch mittels Callback-Routinen).
+
+            Bei einer strikten Architektur darf eine Ebene $i$ nur mit der unter ihr liegenden Ebene $i-1$ direkt kommunizieren. Und eine indirekte Kommunikation einer Ebene $i$ ist nur mit der direkt darüber liegenden Ebene $i+1$ möglich.
+
+            Innerhalb einer Ebene ist stets jede Kommunikationsart zulässig.\footnote{http://glossar.hs-augsburg.de/Schichtenarchitektur}
+        
+        \item[Fiori] SAP Fiori ist das neue User Experience Paradigma für SAP Software.\footnote{Vgl. http://go.sap.com/product/technology-platform/fiori.html} 
+    
+        \item[Cloud] Cloud Computing beinhaltet Technologien und Geschäftsmodelle um IT-Ressourcen dynamisch zur Verfügung zu stellen und ihre Nutzung nach flexiblen Bezahlmodellen abzurechnen. Anstelle IT-Ressourcen, beispielsweise Server oder Anwendungen, in unternehmenseigenen Rechenzentren zu betreiben, sind diese bedarfsorientiert und flexibel in Form eines dienstleistungsbasierten Geschäftsmodells über das Internet oder ein Intranet verfügbar. Diese Art der Bereitstellung führt zu einer Industrialisierung von IT-Ressourcen, ähnlich wie es bei der Bereitstellung von Elektrizität der Fall war. Firmen können durch den Einsatz von Cloud Computing langfristige Investitionsausgaben (CAPEX) für den Nutzen von Informationstechnologie (IT) vermindern, da für IT-Ressourcen, die von einer Cloud bereitgestellt werden, oft hauptsächlich operationale Kosten (OPEX) anfallen.\footnote{http://wirtschaftslexikon.gabler.de/Definition/cloud-computing.html}
+
+        \item[Mainframe] Hochleistungsrechner, den viele Benutzer (mehrere Hundert) gleichzeitig benutzen können. Kennzeichnend sind eine hohe Verarbeitungsgeschwindigkeit, eine große interne und externe Speicherkapazität und eine große Anzahl von Ein-/Ausgabekanälen. Benötigt klimatisierte Räume und spezielles Bedienungspersonal (Operator). Einsatz in Rechenzentren und großen DV-Abteilungen.\footnote{http://wirtschaftslexikon.gabler.de///Definition/mainframe.html}
+
+        \item[HANA] SAP HANA (High-Performance Analytical Appliance) ist eine relationale In-Memory Datenbank, die auf SQL basiert. SAP HANA kann entweder als Appliance, eine Kombination von Hardware und Software oder in der Cloud verwendet werden. [...] Mit SAP HANA ist es möglich, große Datenmengen schnell in Echtzeit zu analysieren. Sie kombiniert spaltenorientierte und zeilenorientierte Datenbanktechnologien und ist auf paralleles Ausführen von Prozessen durch Verwendung mehrkerniger CPU-Architekturen optimiert.\footnote{http://wikis.gm.fh-koeln.de/wiki\_db/Datenbanken/SAP-HANA}
+
+    \end{description} 
+
+    Definitionen des ISO9026 zu den Subkategorien zur Bewertung von Software:
+    \begin{itemize}
+      \item Functionality
+        \begin{description}
+              \item[Suitability] The capability of the software product to provide an appropriate set of functions for specified tasks and user objectives.
+              \item[Accuracy] The capability of the software product to provide the right or agreed results or effects with the needed degree of precision.
+              \item[Interoperability] The capability of the software product to interact with one or more specified systems.
+              \item[Security] The capability of the software product to protect information and data so that unauthorised persons or systems cannot read or modify them and authorised persons or systems are not denied access to them.
+              \item[Functionality compliance] The capability of the software product to adhere to standards, conventions or regulations in laws and similar prescriptions relating to functionality.\footnote{ISO 9126 Standard, S.8}
+            \end{description}
+      \item Reliability
+         \begin{description}
+              \item[Maturity] The capability of the software product to avoid failure as a result of faults in the software.
+              \item[Fault tolerance] The capability of the software product to maintain a specified level of performance in cases of software faults or of infringement of its specified interface.
+              \item[Recoverability] The capability of the software product to re-establish a specified level of performance and recover the data directly affected in the case of a failure.
+              \item[Reliability compliance] The capability of the software product to adhere to standards, coventions or regulations relating to reliability.\footnote{ISO 9126 Standard, S.9}
+            \end{description}
+      \item Usability
+        \begin{description}
+              \item[Understandability] The capability of the software product to enable the user to understand whether the software is suitable, and how it can be used for particular tasks and conditions of use.
+              \item[Learnability] The capability of the software product to enable the user to learn its application.
+              \item[Operability] The capability of the software product to enable the user to operate and control it.
+              \item[Attractiveness] The capability of the software product to be attractive to the user.
+              \item[Usability compliance] The capability of the software product to adhere to standards, conventions, style guides or regulations relating to usability.
+            \end{description}
+      \item Efficiency
+        \begin{description}
+              \item[Time behaviour] The capability of the software product to provide appropriate response and processing times and throughput rates when performing its function, under stated conditions.
+              \item[Resource utilisation] The capability of the software product to use appropriate amounts and types of resources when the software performs its function under stated conditions.
+              \item[Efficiency compliance] The capability of the software product to adhere to standards or conventions relating to efficiency.
+            \end{description}
+      \item Maintainability
+        \begin{description}
+              \item[Analyzability] The capability of the software product to be diagnosed for deficiencies or causes of failures in the software, or for the parts to be modified to be identified.
+              \item[Changeability] The capability of the software product to enable a specified modification to be implemented.
+              \item[Stability] The capability of the software product to avoid unexpected effects from modifications of the software.
+              \item[Testability] The capability of the software product to enable modified software to be validated.
+              \item[Maintainability compliance] The capability of the software product to adhere to standards or conventions relating to maintainability.
+            \end{description}
+      \item Portability
+        \begin{description}
+              \item[Adaptability] The capability of the software product to be adapted for different specified environments without applying actions or means other than those provided for this purpose of the software considered.
+              \item[Installability] The capability of the software product to be installed in a specified environment.
+              \item[Co-existence] The capability of the software product to co-exist with other independent software in a common environment sharing common resources.
+              \item[Replaceability] The capability of the software product to be used in place of another specified software product for the same purpose in the same environment.
+              \item[Portability compliance] The capability of the software product to adhere to standards or conventions relating to portability.
+            \end{description}
+    \end{itemize}

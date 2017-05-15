@@ -1,0 +1,63 @@
+\chapter{Etablieren der Qualitätssicherung in agilen Prozessen}
+
+    Das Ziel dieses Kapitels ist es eine Möglichkeit aufzuzeigen, die zuvor herausgearbeiteten Ansätze, in ein agiles Projekt zu integrieren und kontinuierlich zu verbessern. Hierfür werden Methoden und Ziele aus ISO 9000ff., Total Quality Management und Six Sigma kombiniert. Die Ansätze können in kleinen Schritten iterativ in den Scrum-Prozess integriert werden und der durch sie erzielte Fortschritt unmittelbar überprüft werden.
+
+    Die Grundlage zur kontinuierlichen Verbesserung von Sprints im Scrum soll der im Rahmen von \autoref{subsec:iso9000} vorgestellte Deming-Kreis sein. Vorab werden die vier Schlüsselelemente der ISO 9001 betrachtet.
+
+    \section{Schlüsselelemente der ISO 9001 in agilen Verfahren}
+
+        Zunächst wird von der ISO 9001 gefordert, dass sich Menschen im Unternehmen der Qualität annehmen. Bei Scrum-Teams werden alle Personen als gleichwertig angesehen und die Kommunikation zwischen diesen soll möglichst alle Probleme lösen. Ein Qualitätsbeauftragter, der Mitglied des Scrum-Teams ist, hat daher nicht die notwendige Berechtigung zu intervenieren, wie es die organisatorische Qualitätssicherung vorsieht. Damit keine qualitativ minderwertigen Produkte als fertig markiert werden, muss ein externer Qualitätsbeauftragter am Ende des Sprints prüfen, ob das Inkrement als fertig abgegeben werden darf. Die Einschätzung des Qualitätsbeauftragten sollte über die Definition of Done hinausgehen. Weiterhin muss er die Möglichkeit haben ein Produkt zurück in die Entwicklung zu geben, wenn er die Anforderungen als nicht erfüllt betrachtet. Das Element des Backlogs wird in diesem Fall nicht als abgeschlossen markiert.
+
+        Weiterhin wird gefordert, dass die Verfahren im Unternehmen implementiert und das alle Verfahren des Unternehmens dokumentiert sind. Scrum als Prozess und die Softwareentwicklung im Rahmen dieses Prozesses ist bereits dokumentiert. Ergänzende Maßnahmen, wie sie in den vorherigen Kapiteln vorgeschlagen werden, müssen dagegen noch ergänzt werden. Vor dem Start eines agilen Projektes müssen daher alle Schritte, Meetings und Rollen, die im Projekt zum Einsatz kommen, definiert und festgelegt werden. Diese Dokumentation sollte ständig verbessert werden, wenn das Scrum-Team Optimierungspotenzial sieht.
+
+        Zuletzt muss die Wirksamkeit des Systems überprüft werden. Wenn die Inkremente zum Ende eines Sprints häufiger nicht alle Anforderungen erfüllen, muss im System nachgebessert werden. Die Kontrolle und Verbesserung des Prozesses läuft im Rahmen des Deming-Zyklus ab, der im folgenden Abschnitt betrachtet wird.
+
+    \section{Kontinuierliche Verbesserung im Deming-Zyklus}
+
+        \subsection{Plan}
+
+            Als initialer Schritt dient die in \autoref{subsec:scrum} genannte Festlegung des Scrum-Verfahrens mit dokumentierten Rollen, Prozessen und Methoden. Hier plant das Team die Schritte der ersten Iteration. Das Ziel eines Prozessdurchlaufs ist die Fertigstellung eines Produktinkrements, dass die Definition of Done des Scrum-Teams erfüllt, vom Qualitätsbeauftragten geprüft wird und vom Kunden als Antwort auf sein Bedürfnis betrachtet wird.
+
+            Es ist dabei dem Team überlassen, sich zu Beginn mehr Freiheiten einräumen zu lassen und, falls nötig, mehr Methoden zu verwenden oder in einer sehr strikten Planung mehr Freiheiten zu gewähren.
+
+            Eine Möglichkeit der Rollenplanung für ein Scrum-Team wäre Folgende:
+            \begin{table}[!htbp]
+            \begin{tabularx}{\textwidth}{|l|l|X|}
+                \hline
+                Rolle & Name & Verantwortungsbereich \\
+                \hline
+                Product Owner & Peter Product & Kommunikation mit Kunden; Pflege des Product Backlogs \\
+                Scrum Master & Melanie Master & Koordination der Daily Scrums; Vermittler zwischen Entwicklern und Product Owner \\
+                Entwickler & Carlos Coder & Experte für Datenbanken; Entwicklung der Inkremente \\
+                Qualitätsbeauftragte & Patricia Penibel & Review der Inkremente; Einhaltung des Prozesses überprüfen \\
+                \hline
+            \end{tabularx}
+            \caption{Planung der Rollen im Projekt}
+            \label{tbl:roles}
+            \end{table}
+
+            Für die Umsetzung dieser Verfahren sind mit Anmerkungen versehene Prozessdiagramme in der Dokumentation hilfreich, die an \autoref{abb:xpmodel} oder \autoref{abb:scrum} angelehnt sind.
+
+            Aus der Dokumentation soll hervorgehen, was die Aufgaben jedes Projektmitglieds sind und wie diese vorzugehen haben. Beispielsweise sollte ein neuer Qualitätsbeauftragter anhand der Dokumentation die korrekte Ausführung aller Tätigkeiten im Team überprüfen und verstehen können.
+
+        \subsection{Do}
+
+            Der Deming-Zyklus sieht vor, dass die geplanten Ergebnisse in einem kleinen Rahmen ausgefüht werden, bevor sie im gesamten Unternehmen angewandt werden. Da ein Scrum-Team sehr klein ist, sollte der Plan direkt im Team angewandt werden. Bei größeren Projekten, die sich aus mehreren Scrum-Teams zusammensetzen, besteht jedoch die Möglichkeit neue Pläne in einem Scrum-Team auszuprobieren und, bei Erfolg, auf alle Teams zu erweitern.
+
+            In der ausführenden Phase werden die Pläne umgesetzt und durchlaufen. Für ein Standard Scrum-Verfahren bedeutet dies, dass zunächst das Sprint-Planning, gefolgt vom eigentlichen Sprint, stattfindet und mit dem Sprint-Review und der Retrospektive abgeschlossen wird.
+
+        \subsection{Check}
+
+            Im Anschluss an die Durchführung wird überprüft, wie das Ergebnis des Prozesses aussieht. Diese Prüfung kann die Qualität des Endergebnisses umfassen, aber auch die Zufriedenheit der Entwickler, die Zahl der investierten Stunden zum Erreichen eines Produkts sowie die Begeisterung des Kunden für das Ergebnis. Sollte der Planungszyklus das erste Mal durchlaufen werden, können in dieser Phase die initialen Werte festgelegt werden, die in den späteren Iterationen verbessert werden sollen.
+
+            Das Team kann die Zufriedenheit des Kunden mit dem Produktinkrement abfragen, bewerten und als weiteres Ziel festlegen diese Kennzahl kontinuierlich zu verbessern.
+
+            Wenn in einer späteren Iteration eine Verbesserung der initial festgelegten Kennzahlen festgestellt wird, kann somit überprüft werden, ob der neue Plan eine Verbesserung zum Guten darstellt und somit konform mit dem kontinuierlichen Verbesserungsprozess ist. So können durch kleine Abweichungen vom initialen Plan die Potenziale zur Verbesserung sehr genau ermittelt werden.
+
+            Sollte keine Verbesserung, oder sogar eine Verschlechterung, eintreten wird die Änderung verworfen. Ist dies nicht der Fall folgt der letzte Schritt, bevor eine neue Iteration gestartet wird.
+
+        \subsection{Act}
+
+            Wenn eine Verbesserung erzielt wurde, wird diese im Rahmen der Act-Phase als neuer Standard für das Team etabliert. Die Dokumentation wird verändert, sodass diese den neuen Stand abbildet und, falls es sich um ein sehr großes Projekt handelt, wird das neue Verfahren von der Testgruppe auf die Organisation ausgerollt.
+
+            Am Ende dieser Phase steht nun eine aktualisierte Dokumentation und ein besserer Prozess. Auf Grundlage dieses Ergebnisses wird die Planung erneut gestartet. 
