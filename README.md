@@ -2,7 +2,7 @@
 
 Dieses Repository enthält die Sourcen für meine Bachelorarbeit zum Thema *"Qualitätssicherung in agilen Softwareprojekten"*, die 2016 an der [Dualen Hochschule Baden-Württemberg Mannheim](https://www.dhbw-mannheim.de/) im Fach Wirtschaftsinformatik eingereicht wurde.
 
-Die vollständige Bachelorarbeit kann [hier](https://s3.eu-central-1.amazonaws.com/wwi13sca-sschmitz-thesis/WWI13SCA_Steffen_Schmitz_Bachelorarbeit.pdf) heruntergeladen werden.
+Die vollständige Bachelorarbeit kann [hier](https://s3.eu-central-1.amazonaws.com/steffen911-papers/WWI13SCA_Steffen_Schmitz_Bachelorarbeit.pdf) heruntergeladen werden.
 
 ## Kurzfassung
 
